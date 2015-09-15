@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <include
+            layout="@layout/tool_bar"
+            android:id="@+id/tool1"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/filtertv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filtertext1"
+            android:textColor="#000"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/fcv1"
+            app:cardElevation="4dp"
+            android:layout_margin="10dp"
+            >
+
+            <Spinner
+                android:id="@+id/sp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/location_array"
+                android:prompt="@string/location_prompt"
+                >
+            </Spinner>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/filtertv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filtertext2"
+            android:textColor="#000"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/fcv2"
+            app:cardElevation="4dp"
+            android:layout_margin="10dp"
+            >
+
+            <Spinner
+                android:id="@+id/sp2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/title_array"
+                android:prompt="@string/title_prompt"
+                >
+            </Spinner>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/fcv3"
+                app:cardElevation="4dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                >
+                <Spinner
+                    android:id="@+id/sp3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/salary_array1"
+                    android:prompt="@string/salary_prompt1"
+                    >
+                </Spinner>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/fcv4"
+                app:cardElevation="4dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+
+                >
+                <Spinner
+                    android:id="@+id/sp4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/salary_array2"
+                    android:prompt="@string/salary_prompt2"
+                    >
+
+                </Spinner>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/filtertv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/searchtext4"
+                android:textColor="#000"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_margin="5dp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/fcv5"
+                app:cardElevation="4dp"
+                android:layout_margin="10dp"
+                >
+
+                <Spinner
+                    android:id="@+id/sp5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/exp_array"
+                    android:prompt="@string/exp_prompt"
+                    >
+                </Spinner>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/filterbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:background="@color/PrimaryDarkColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Done"
+        android:textColor="@color/white"
+        />
+
+
+
+</LinearLayout>
