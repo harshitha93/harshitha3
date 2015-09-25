@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/tablinear2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <include
+        layout="@layout/tool_bar"
+        android:id="@+id/scrolltool"/>
+
+    <RelativeLayout
+        android:id="@+id/profilerel1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/imv1"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_spoorthi"
+            />
+
+        <TextView
+            android:id="@+id/profiletext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spoorthi N"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/imv1"
+            android:layout_margin="10dp"
+            android:textSize="25sp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
