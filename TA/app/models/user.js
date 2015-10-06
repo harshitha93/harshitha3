@@ -12,20 +12,3 @@ module.exports = mongoose.model('db2', new Schema({
 }));
 
 
-
-module.exports = mongoose.model('rec', new Schema({
-    name: String,
-    designation: String,
-    email: String,
-    phone: String,
-    pastemployment: [{
-    	                company:String,
-    	                timeperiod:String,
-    	                designation:String,
-    	                loc:String
-    }]
-
-}//,
-  //{ collection: 'recs' }
-  )
-);
