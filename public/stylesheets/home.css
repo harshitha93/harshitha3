@@ -1,0 +1,44 @@
+.navbar
+{
+	background:gray;
+	opacity:0.2;
+	margin-bottom:0;
+	border:1px solid #dadada;
+}
+#columns1,#columns2,#columns3,#columns4
+{
+	padding:0;
+	border-right:1px solid transparent;
+}
+#partup1
+{
+	background:orange;
+	height:60%;	
+}
+#partup2
+{
+	background:orange;
+	height:60%;
+	
+}
+#partsmall1,#partsmall2,#partsmall3,#partsmall4
+{
+	display:none;
+}
+
+@media (max-width: 768px){
+#partup1,#partup2
+{
+	display:none;
+}
+#partdown1,#partdown2
+{
+ display:none;
+}
+#partsmall1,#partsmall2,#partsmall3,#partsmall4
+{
+	display:block;
+}
+
+
+}

@@ -1,0 +1,56 @@
+<! doctype html>
+<html>
+    <head>
+        <title>sign up</title>
+       
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/stylesheets/logincss.css">
+           <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+ <script>
+
+
+      function login()
+      {
+        var name=document.getElementById("name").value
+        var password=document.getElementById("password").value
+      $.ajax({
+          
+           url: "http://192.168.0.108:8888/login",
+           type:"post",
+           data:{"user": name, "password":password  }
+
+
+        });
+
+ 
+
+</script>        
+ <body style="background:#2f323d">
+
+       
+        
+         <div class="col-lg-4 col-xs-4 col-md-4 col-sm-4 well" style="background:white">
+            <div class="row">
+            <div id="text"class="col-md-4 col-md-6">
+            <form action="">
+             <p style="color:blue"><b>Name</b></p>
+            <input type="text" id="name" placeholder="Enter your name" required="">
+             <p style="color:blue"><b>Password</b></p>
+            <input type="password" id="password" placeholder="Enter password" required="">  
+            <br>
+            <br>
+            <input type="button" id="but" value="login" onclick="login()">
+            </form>
+           <div id='message'> </div>
+           </div>
+          </div>
+      
+         
+               
+  </body>    
+
+  

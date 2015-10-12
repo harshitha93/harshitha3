@@ -1,0 +1,30 @@
+
+<div id="profwell"class="well" >
+  <h3 style="margin-top:0">ALLJOBS</h3>
+      <div class="col-lg-12 " style="padding:20px">
+
+  <div class="totdiv"style="display:flex" ng-app="myApp" ng-controller="alljobscontroller" ng-repeat="x in jobsdata">
+    <div style="margin-bottom:0" id="{{'well' + $index}}" class="well well-sm txtwell">
+      <div class="text">
+       <p style="font-size:20px"> <a id="{{'desi'+ $index}}"  href="#/alljobs/jobtitle" onclick="fun(this)"><b> {{x.designation}}</b></a></p>
+        <p1>{{x.experience}}</p1>
+        <span style="background-color:gray;color:white;border:1px solid">{{x.location}}</span>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  </div>
+  </div>
+
+<style>
+.text p a:hover
+{
+  text-decoration:none;
+}
+
+</style>
+
+
+

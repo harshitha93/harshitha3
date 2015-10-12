@@ -1,0 +1,110 @@
+/*.actbig
+{
+	width:80% !important;  
+	position:absolute;
+	padding-right:15%;
+	
+}*/
+/*.actsmall
+{
+  display:inline-block;
+  height:80px;
+  margin-top:5px;
+  padding-right:15%;
+}
+*/.txtwell{
+	width:100%;
+	margin-top:1%;
+ 	display:inline-block;
+	
+}
+
+#icons
+{
+	margin-left:15px;
+	margin-right:15px;
+	color:white;
+
+}
+
+
+.mdl-layout__header-row a:hover
+{
+	text-decoration: none;
+}
+#side-menu
+{
+	text-align:center;
+	 }
+ .well.well-sm
+ {
+   text-align:left;
+   background-color: white;
+   overflow:hidden;
+ }
+
+ .secdiv
+ {
+ 	display:none;
+ 	position:absolute;
+ 	padding-top:1%;
+ 	margin-bottom:0;
+ 	background-color:#283c51;
+ 	color:white;
+ 	text-align:center;
+ }
+.arrbutn
+{
+float:right;
+margin-top:2%;
+}
+
+.text
+{
+	display:inline-block;
+	
+}
+.action
+{  display:inline;
+	margin-left:10px;
+	list-style:none;
+}
+#apply a
+{
+	text-decoration:none;
+	color:black;
+	
+}
+#apply a:hover
+{
+	text-decoration:none;
+	color:black;
+}
+ul.sidelist
+{
+	padding-left:0;
+	
+}
+
+ul.sidelist li a
+{
+	list-style:none;
+	padding:5px;
+	font-size:larger;
+
+}
+
+.mdl-navigation__link:hover
+{
+	text-decoration: none;
+	background-color: black;
+	color:white;
+	
+}
+@media only screen and (max-width:720px){
+ div.text p{
+ 	font-size: 10px;
+ }
+
+}
+

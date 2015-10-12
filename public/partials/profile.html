@@ -1,0 +1,125 @@
+
+  
+
+
+
+  <div id="profwell"class="well"  >
+      <div class="col-lg-12" style="padding:20px">
+        <section class="panel">
+                    <header class="panel-heading">
+                       <h3 style="text-transform:capitalize;display:inline"> MY Profile</h3>
+                        <span class="tools pull-right" >
+                            <button  style="background-color:#1fb5ad;color:white"><i class="glyphicon glyphicon-pencil"></i>Edit</button> 
+                            <button><i class="glyphicon glyphicon-cog"></i>settings</button>
+                        </span>
+                    </header>
+                    <div class="panel-body">
+                        <div class="col-sm-3" >
+                           <img src="images/prof.jpg" width="150",height="150"> 
+                        </div>
+                        <div class="col-sm-6">
+                        <h1 >Jhon Deo</h1>
+                               <span class="text-muted">Web Developer</span>
+                               <p>
+                                   jhon.deo@company.com
+                               </p>
+                        </div>
+                        <div class="editbut col-sm-6 " style="padding-top:1%">
+                        <span  >
+                            <button  style="background-color:#1fb5ad;color:white"><i class="glyphicon glyphicon-pencil"></i>Edit</button> 
+                            <button><i class="glyphicon glyphicon-cog"></i>settings</button>
+                        </span>
+                        </div>
+                    </div>
+                </section>
+      </div>
+  </div>
+
+ 
+<div id="deswell"class="well"> 
+  <div class="col-lg-12 hidden-xs hidden-sm" style="padding:10px">
+  <ul class="nav nav-tabs nav-justified responsive hideen-xs hidden-sm" id="myTab">
+        <li><a data-target="#perinfo" data-toggle="tab">PERSONAL INFO</a></li>
+        <li><a data-target="#orgdata" data-toggle="tab">ORGANIZATION DATA</a></li>
+        <li><a data-target="#cont" data-toggle="tab">CONTACT</a></li>
+        <li><a data-target="#more" data-toggle="tab">MORE</a></li>
+  </ul>
+
+  <div class="tab-content responsive hidden-xs hidden-sm" >
+        <div class="tab-pane active" id="perinfo"><span>Home</span></div>
+        <div class="tab-pane" id="orgdata">Profile</div>
+        <div class="tab-pane" id="cont">Message</div>
+        <div class="tab-pane" id="more">Settings</div>
+      </div>
+  </div>
+  <div class="panel-group responsive visible-xs visible-sm">
+      <div class="panel panel-default">
+          <div class="panel-heading">
+            <a href="#" data-toggle="collapse" data-target="#perinfodrop">PERSONAL INFO</a>
+          </div>
+          <div class="panel-collapse collapse" id="perinfodrop">
+             <div class="panel-body active" >
+             personal info
+             </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+            <a href="" data-toggle="collapse" data-target="#orgdatadrop">ORGANIZATION DATA</a>
+          </div>
+          <div class="panel-collapse collapse" id="orgdatadrop">
+             <div class="panel-body active" >
+             personal info
+             </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+            <a href="" data-toggle="collapse" data-target="#contdrop">CONTACT</a>
+          </div>
+          <div class="panel-collapse collapse" id="contdrop">
+             <div class="panel-body active" >
+             personal info
+             </div>
+          </div> 
+      </div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+            <a href="" data-toggle="collapse" data-target="#moredrop">MORE</a>
+          </div>
+          <div class="panel-collapse collapse" id="moredrop">
+             <div class="panel-body active" >
+             personal info
+             </div>
+          </div> 
+      </div>
+  </div>
+</div>
+
+<script>
+jQuery(function () {
+jQuery('#myTab a:first').tab('show')
+})
+</script>
+<style>
+#deswell ul li a:hover
+{
+  cursor:default;
+}
+.tab-content
+{
+  background-color:white;
+
+}
+.tab-pane
+{
+  height:130px;
+}
+@media (max-width: 768px){
+ 
+
+}
+</style>
+       
+
+

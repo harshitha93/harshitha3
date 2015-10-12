@@ -1,0 +1,27 @@
+ <div id="profwell"class="well"  >
+        <div class="col-lg-12" style="padding:20px">
+            <div class="totdiv" style="display:flex">
+              <div style="margin-bottom:0" id="{{'well' + $index}}" class="well well-sm txtwell">
+                <div class="text">
+                    <p style="font-size:20px"><b> {{k.designation}}</b></p>
+                    <p1><strong>Description:</strong></p1>
+        <ul style="list-style:none">
+        <li ng-repeat= "para in k2"> 
+                    
+                    <br>
+                    <p>{{para}}</p>
+        </li>
+        </ul>
+        
+                    <p1><strong>Location</strong></p1>
+                    <br>
+                    <p1>{{k.location}}</p1>
+                    <br>
+                    <p1><strong>Experience</strong></p1>
+                    <br>
+                    <p1>{{k.experience}}</p1>
+                </div>
+              </div>
+           </div>
+        </div>
+  </div>
